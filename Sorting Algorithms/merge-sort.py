@@ -1,4 +1,4 @@
-# time complexity of n log n
+# time complexity = O(n log n)
 def merge(left, right, arr):
     i = j = k = 0
 
