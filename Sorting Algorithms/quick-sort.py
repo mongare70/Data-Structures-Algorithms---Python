@@ -1,3 +1,4 @@
+# time complexity = O(n log n)
 def quicksort(arr):
     qs(arr, 0, len(arr) - 1)
 
@@ -5,7 +6,8 @@ def quicksort(arr):
 def qs(arr, l, r):
     if l >= r:
         return
-    p = partition(arr, l, r)
+
+    p = partition(arr, l, r) 
 
     qs(arr, l, p - 1)
     qs(arr, p + 1, r)
@@ -24,6 +26,8 @@ def partition(arr, l, r):
 
     # swap arr[i+1] and arr[r]        
     arr[i + 1], arr[r] = arr[r], arr[i + 1]
+
+    # return index of pivot
     return i + 1
 
 
