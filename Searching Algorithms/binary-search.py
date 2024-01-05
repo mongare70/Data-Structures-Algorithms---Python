@@ -6,7 +6,7 @@ def search(arr, target):
     right = len(arr) - 1
 
     while left <= right:
-        mid = math.ceil((left + right) / 2)
+        mid = math.floor((left + right) / 2)
 
         if arr[mid] == target:
             return mid
